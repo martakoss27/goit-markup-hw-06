@@ -76,26 +76,34 @@
                   <use href="./images/icons.svg#icon-close-x"></use>
                 </svg>
               </button>
-
               <p class="modal-headline">
                 Leave your information and we'll call you back
               </p>
               <!--Modal Form-->
               <form class="modal-form" name="modal-form" validate>
                 <label class="modal-label">
-                  Name
+                  <p class="label-name">Name</p>
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                  </svg>
                   <input class="modal-input" type="text" name="name" />
                 </label>
                 <label class="modal-label">
-                  Phone
+                  <p class="label-name">Phone</p>
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg#icon-phone-black"></use>
+                  </svg>
                   <input class="modal-input" type="tel" name="phone-number" />
                 </label>
                 <label class="modal-label">
-                  E-mail
+                  <p class="label-name">E-mail</p>
+                  <svg class="modal-icon">
+                    <use href="./images/icons.svg#icon-email-black"></use>
+                  </svg>
                   <input class="modal-input" type="email" name="modal-email" />
                 </label>
                 <label class="modal-label">
-                  Comment
+                  <p class="label-name-comment">Comment</p>
                   <textarea
                     class="modal-comment"
                     name="comment"
@@ -107,7 +115,7 @@
                   I agree with the newsletter and accept the Terms and
                   Conditions
                 </label>
-                <label>
+                <label class="button-lable">
                   <button class="modal-button" type="submit" name="modal-send">
                     Send
                   </button>
