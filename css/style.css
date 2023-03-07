@@ -322,11 +322,6 @@ h1 {
   top: 14px;
   position: relative;
 }
-.label-name-comment {
-  margin: 0;
-  top: 0;
-  position: relative;
-}
 .modal-icon {
   position: relative;
   top: 27px;
@@ -335,6 +330,9 @@ h1 {
   height: 15px;
   margin: 0;
 }
+.modal-icon:hover {
+  fill: var(--additional-color);
+}
 .modal-input {
   width: 448px;
   height: 40px;
@@ -342,11 +340,27 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
 }
+.modal-input:hover {
+  border: 1px solid var(--additional-color);
+  border-radius: 4px;
+}
+.modal-input:focus {
+  border: 1px solid var(--additional-color);
+  border-radius: 4px;
+}
 .modal-comment {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.modal-comment:hover {
+  border: 1px solid var(--additional-color);
+}
+.label-name-comment {
+  margin: 0;
+  top: 0;
+  position: relative;
 }
 .button-lable {
   display: flex;
