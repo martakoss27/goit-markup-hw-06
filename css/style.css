@@ -326,12 +326,11 @@ h1 {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:hover {
-  border: 1px solid var(--additional-color);
-  border-radius: 4px;
-}
-.modal-input:focus {
   border: 1px solid var(--additional-color);
   border-radius: 4px;
 }
@@ -340,6 +339,9 @@ h1 {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comment:hover {
   border: 1px solid var(--additional-color);
