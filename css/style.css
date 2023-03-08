@@ -306,7 +306,7 @@ h1 {
 }
 .label-name {
   margin: 0;
-  top: 14px;
+  top: 10px;
   position: relative;
 }
 .modal-icon {
@@ -345,14 +345,16 @@ h1 {
   border: 1px solid var(--additional-color);
 }
 .label-name-comment {
+  position: relative;
   margin: 0;
   top: 0;
-  position: relative;
 }
 .checkbox-label {
-  width: 425px;
+  position: relative;
+  display: block;
+  width: 447px;
   height: 57px;
-  padding: 7px 0px 7px 0px;
+  padding: 7px 0px 7px 27px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -361,6 +363,24 @@ h1 {
   letter-spacing: 0.03em;
 
   color: #757575;
+  cursor: pointer;
+}
+.check-icon {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  width: 16px;
+  height: 15px;
+  visibility: hidden;
+}
+.check-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.check-input:checked ~ .check-icon {
+  background-color: var(--additional-color);
+  visibility: visible;
 }
 .button-lable {
   display: flex;
@@ -399,6 +419,9 @@ h1 {
   background-color: var(--main-backroung-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:hover {
   background-color: var(--additional-color);
