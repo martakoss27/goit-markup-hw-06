@@ -317,12 +317,16 @@ h1 {
   height: 15px;
   margin: 0;
 }
-.modal-icon:hover {
+.modal-label:hover > .modal-icon {
+  fill: var(--additional-color);
+}
+.modal-label:focus-within > .modal-icon {
   fill: var(--additional-color);
 }
 .modal-input {
   width: 448px;
   height: 40px;
+  padding-left: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
@@ -376,14 +380,20 @@ h1 {
   width: 16px;
   height: 15px;
   visibility: hidden;
+  z-index: 1;
+  transition-property: visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-input {
   position: absolute;
-  opacity: 0;
+  left: 5px;
+  top: 10px;
+  width: 16px;
+  height: 15px;
   cursor: pointer;
 }
 .check-input:checked ~ .check-icon {
-  background-color: var(--additional-color);
   visibility: visible;
 }
 .button-lable {
