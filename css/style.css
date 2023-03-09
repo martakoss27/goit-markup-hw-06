@@ -396,7 +396,7 @@ h1 {
   height: 15px;
   cursor: pointer;
 }
-.check-input:checked ~ .check-icon {
+.check-icon ~ .check-input:checked {
   visibility: visible;
 }
 .button-lable {
